@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dachshund Project</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="StilleyNicolasStyleSheet.css"
+    />
+    <script src="myJavascript.js" async></script>
+  </head>
+  <body class="content-box">
+    <div class="head-box">
+      <div class="titleBox">
+      <h1 class="head-title" onmouseover="style.color='#D9501E'" onmouseout="style.color='#40110d'">dachshunds</h1>
+    </div>
+      <div class="welcomeAudioBox">
+        <audio controls class="welcomeAudio">
+          <source src="./images/welcometomysite.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <nav class="nav-bar">
+        <ul class="nav">
+          <li class="about-bullet">
+            <a href="about.html" class="about-link">About Me</a>
+          </li>
+          <li class="cat-bullet">
+            <a href="catPage.html" class="cat-link">Cats?</a>
+          </li>
+          <li class="table-bullet">
+            <a href="table.html" class="table-link">My First Table</a>
+          </li>
+          <li class="form-bullet">
+            <a href="form.html" class="form-link">Feedback</a>
+          </li>
+        </ul>
+        
+      </nav>
+      <div class="jsBox">
+        <button type="button" class="dtgbutton" onclick="document.getElementById('dtg').innerHTML=Date('')">Click for Date and Time</button>
+        <p id="dtg"></p>
+      </div>
+    </div>
+    <div class="body-box">
+      <article class="body-content">
+        <div class="welcomeVideoBox">
+          <video class="welcomeVideo" controls>
+            <source src="./images/classvid.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="rightBox">
+          <h3 class="art-title">My history with Dachshunds</h3>
+          <p>
+            Since I was a little boy, dachshunds have always been a part of my
+            life. My grandma had this one named Ossie. He was so cute and was
+            the first reason I started to love weiner dogs. Eventually Ossie
+            passed away but his memory will never be forgotten.
+          </p>
+          <p>
+            One day my mom decided that we were going to get some new
+            dachshunds. We adopted 3 that my aunt was giving away. We kept two
+            naming them Loki and Thor and my grandma kept the other one naming
+            him Hugh.
+          </p>
+          <p>
+            Loki and Thor were great dogs to live with. They were always so fun
+            to have around and loved getting attention from us and playing with
+            their toys. My brother and I used to let them sleep with us in our
+            beds when they were puppies and when my mom wasn't around we'd
+            always let them onto the couch that they weren't allowed on.
+          </p>
+          <p>
+            Loki and Thor are getting old now and are getting grey beards. I've
+            also moved out and am in the Army now so I don't get to see them
+            very often which sucks. I'm really excited to get my own place one
+            day so I can get dachshunds of my own.
+          </p>
+        </div>
+      </article>
+      <article class="body-pics">
+        <h3 class="art-title">My Dogs</h3>
+        <img
+          src="./images/lokithorsleeping.jpeg"
+          alt="A picture of loki and thor sleeping"
+          class="picstyle"
+        />
+        <img
+          src="./images/thorsitting.JPEG"
+          alt="A picture of thor looking out the door"
+          class="picstyle"
+        />
+      </article>
+
+      <div class="bottom-content">
+        <div class="info-box">
+          <h3 class="art-title">Information about Dachshunds</h3>
+
+          <a
+            href="https://dogtime.com/dog-breeds/dachshund#/slide/1"
+            target="_blank"
+            class="picLink"
+          >
+            <img
+              src="./images/lokithorcoolingoff.jpeg"
+              alt="Loki and Thor cooling off on the kitchen floor."
+              class="picstyle"
+          /></a>
+          <div class="otherLinks">
+            <p>
+              <a
+                href="https://www.instagram.com/myloandmelrose/"
+                target="_blank"
+                class="extLink"
+                >myloandmelrose on instagram</a
+              >
+              - My girlfriend's favorite instagram page
+            </p>
+            <p>
+              <a
+                href="https://formydachshund.com/blog/"
+                target="_blank"
+                class="extLink"
+                >A blog page for dachshunds</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.instagram.com/hanktheefrank/"
+                target="_blank"
+                class="extLink"
+                >hanktheefrank on instgram</a
+              >
+              - Another one of my girlfriend's favorite instagram pages
+            </p>
+          </div>
+        </div>
+        <div class="why-box">
+          <h3 class="art-title">Why you should get a Dachshund:</h3>
+          <ul class="why-info">
+            <li class="why-bullets">
+              They are so cute that even my girlfriend, who hated them before
+              meeting me, now <span class="boldtext">LOVES</span> them.
+            </li>
+            <li class="why-bullets">
+              They are really good at
+              <span class="italictext">gardening</span> (digging holes).
+            </li>
+            <li class="why-bullets">
+              They are very loyal and protective of their family.
+            </li>
+          </ul>
+        </div>
+        <div id="secretBox" onmouseover="mOver(this)" onmouseout="mOut(this)">
+          <p>Mouse over me!</p>
+        </div>
+        <div id="mySecret" onmouseover="mOver2(this)" onmouseout="mOut2(this)">
+          <p class="secretCap"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

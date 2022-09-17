@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="StilleyNicolasStyleSheet.css"
+    />
+  </head>
+  <body>
+    <div class="titleBox">
+    <h1 class="head-title">Feedback</h1>
+  </div>
+    <nav class="nav-bar">
+      <ul>
+        <li class="home-bullet">
+          <a href="StilleyNicolasHomePage.html" class="home-link"
+            >Back to Home</a
+          >
+        </li>
+        <li class="about-bullet">
+          <a href="about.html" class="about-link">About Me</a>
+        </li>
+        <li class="cat-bullet">
+          <a href="catPage.html" class="cat-link">Cats?</a>
+        </li>
+        <li class="table-bullet">
+          <a href="table.html" class="table-link">My First Table</a>
+        </li>
+      </ul>
+    </nav>
+    <form
+      method="post"
+      action="http://ss1.ciwcertified.com/cgi-bin/process.pl"
+      class="formPage"
+    >
+      <div class="nameInput">
+        <h4>What is your name?</h4>
+        <div class="firstNameInput">
+          <label for="firstName">First name:</label
+          ><input type="text" id="firstName" name="firstName" />
+        </div>
+        <div class="lastNameInput">
+          <label for="lastName">Last name:</label
+          ><input type="text" id="lastName" name="lastName" />
+        </div>
+      </div>
+
+      <div class="yourDog">
+        <h4>Do you have a dog?</h4>
+        <div class="yourDogInput">
+          <input type="radio" id="yes" name="yourDog" value="Yes" />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="heckyes" name="yourDog" value="Heck Yes" />
+          <label for="heckyes">Heck Yes</label><br />
+          <input type="radio" id="no" name="yourDog" value="No" />
+          <label for="no">No :(</label>
+        </div>
+      </div>
+
+      <div class="dogType">
+        <h4>What type of dog do you have?</h4>
+        <select name="dogType" class="dogTypeInput">
+          <option value="none">I don't have a dog.</option>
+          <option value="dachshund">Dachshund... Obviously</option>
+          <option value="bulldog">Bulldog</option>
+          <option value="germanShepherd">German Shepherd</option>
+          <option value="poodle">Poodle</option>
+          <option value="Chihuahua">Chihuahua</option>
+          <option value="frenchBulldog">French Bulldog</option>
+          <option value="husky">Husky</option>
+          <option value="pug">Pug</option>
+          <option value="shihTzu">Shih Tzu</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="whyYouLikeDogs">
+        <h4>Why do you like dogs? (select all that apply)</h4>
+        <div class="whyDogInput">
+          <input type="checkbox" id="fun" name="whyYouLikeDogs" value="fun" />
+          <label for="fun">They are fun!</label><br />
+          <input
+            type="checkbox"
+            id="companions"
+            name="whyYouLikeDogs"
+            value="companions"
+          />
+          <label for="companions">Great companions</label><br />
+          <input type="checkbox" id="kid" name="whyYouLikeDogs" value="kid" />
+          <label for="kid">My kids really like them.</label><br />
+          <input type="checkbox" id="love" name="whyYouLikeDogs" value="love" />
+          <label for="love">They love me no matter what.</label>
+        </div>
+      </div>
+
+      <div class="feedback">
+        <h4>What do you think of this site?</h4>
+        <textarea
+          name="comments"
+          rows="20"
+          cols="60"
+          placeholder="Comments about the design and layout of the site or anything else you would change or keep."
+        ></textarea>
+      </div>
+
+      <div class="submitreset">
+        <h4>Submit your form.</h4>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
